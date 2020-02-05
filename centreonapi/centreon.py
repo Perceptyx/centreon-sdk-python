@@ -27,3 +27,4 @@ class Centreon(object):
         self.hosttemplates = HostTemplates()
         self.commands = Commands()
         self.resourcecfgs = ResourceCFGs()
+        self.rtdowntime = RTDowntime()
