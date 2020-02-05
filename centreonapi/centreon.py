@@ -7,6 +7,7 @@ from centreonapi.webservice.configuration.poller import Pollers
 from centreonapi.webservice.configuration.hostgroups import HostGroups
 from centreonapi.webservice.configuration.command import Commands
 from centreonapi.webservice.configuration.resourcecfg import ResourceCFGs
+from centreonapi.webservice.configuration.rtdowntime import RTDowntime
 from centreonapi.webservice import Webservice
 
 
