@@ -30,7 +30,7 @@ class Centreon(object):
         self.resourcecfgs = ResourceCFGs()
         self.rtdowntime = RTDowntime()
     
-    def auth(self)
+    def auth(self):
         ws = Webservice.getInstance()
         ws.auth()
         return ws
