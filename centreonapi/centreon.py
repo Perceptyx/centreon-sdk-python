@@ -8,6 +8,8 @@ from centreonapi.webservice.configuration.hostgroups import HostGroups
 from centreonapi.webservice.configuration.command import Commands
 from centreonapi.webservice.configuration.resourcecfg import ResourceCFGs
 from centreonapi.webservice.configuration.rtdowntime import RTDowntime
+from centreonapi.webservice.configuration.realtime import Realtime
+
 from centreonapi.webservice import Webservice
 
 
@@ -29,6 +31,7 @@ class Centreon(object):
         self.commands = Commands()
         self.resourcecfgs = ResourceCFGs()
         self.rtdowntime = RTDowntime()
+        self.realtime = Realtime()
     
     def auth(self):
         ws = Webservice.getInstance()

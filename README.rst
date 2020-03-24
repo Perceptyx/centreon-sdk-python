@@ -94,6 +94,22 @@ Set Macros
     }
 
 
+
+* Realtime API
+
+Get last 5 critical alerts:
+
+.. code-block: python
+
+        realtime.getServices('list',{
+            'status': 'critical',
+            'sortType': 'last_hard_state_change',
+            'order': 'DESC',
+            'limit': 5 ,
+            'fields': 'host_name,description,output,last_state_change'
+        })
+
+
 Features
 --------
 
